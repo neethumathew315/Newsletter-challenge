@@ -25,6 +25,18 @@
         height: 100vh;
       }
 
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      } 
+
       .author-info {
         font-size: 14px;
         text-align: center;
@@ -38,24 +50,39 @@
     </style>
   </head>
   <body>
-    <!-- 
-    Join our newsletter
- 
-    Keep up with our latest collections, exclusive deals, and special offers! We introduce a new collection every week, so stay tuned to snag the hottest items just for you.
- 
-    Enter your email address
- 
-    Subscribe now
- 
-    Your email is 100% confidential and won’t send you any spam.
 
-    -->
 
-    <div class="author-info">
+    <main>
+      <article class="newsletter-card" aria-labelledby="newsletter-heading">
+        <header class="newsletter-header">
+          <div class="icon">
+            <img src="resources/logo.svg" alt="newsletter logo">
+          </div>
+
+          <h1 id="newsletter-heading">Join our newsletter</h1>
+          <p>Keep up with our latest collections, exclusive deals, and special offers! We introduce a new collection every week, so stay tuned to snag the hottest items just for you.</p>
+        </header>
+
+        <section class="newsletter-input">
+          <form action="#" aria-describedby="privacy-note">
+            <label for="email" class="sr-only">Email address</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email address" required aria-required="true">
+            <button type="submit" class="submit-button">Subscribe now</button>
+          </form>
+          <footer id="privacy-note">
+            <small>Your email is 100% confidential and won’t send you any spam.</small>
+          </footer>
+          
+        </section>
+      </article>
+    </main>
+
+
+    <footer class="author-info">
       Coded by <a href="#">Your Name Here</a> | Challenge by
       <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
         >devChallenges.io</a
       >.
-    </div>
+    </footer>
   </body>
 </html>
