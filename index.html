@@ -14,6 +14,7 @@
     <title>Join Our Newsletter | devChallenges.io</title>
 
     <!--You are welcome to delete these styles or modify them in your own stylesheet -->
+    
     <style>
       * {
         margin: 0;
@@ -23,6 +24,97 @@
 
       body {
         height: 100vh;
+        background-color: #fff;
+        font-family: sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+      }
+
+      .newsletter-card {
+        max-width: 400px;
+        width: 100%;
+        text-align: center;
+        padding: 1.5rem;
+      }
+      .newsletter-header .icon img {
+        margin-bottom: 15px;
+        padding: 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .newsletter-header h1 {
+        font-size: 2.3rem;
+        font-weight: bold;
+        padding: 6px;
+        margin-bottom: 15px;
+    
+      }
+
+      .newsletter-header p {
+         font-size: 1.01rem;
+         color: #838282;
+         line-height: 1.5rem;
+         
+      }
+
+      .newsletter-input{
+        background-color: #fff;
+        padding: 1rem;
+        margin-top: 3rem;
+        border-radius: 15px;
+        box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.03), 0px 8px 12px 0px rgba(0, 0, 0, 0.08);
+      }
+
+      .newsletter-input form {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+
+      input[type="email"] {
+        background-color: #f5f5f9;
+        padding: 1.5rem 1rem;
+        border: 1px solid #d1d5db;
+        border-radius: 12px;
+        font-size: 0.875rem;
+        width: 100%;
+        margin-bottom: 12px;
+      }
+
+      input[type="email"]::placeholder {
+        color: #353637;
+        font-size: 1.1rem;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      .submit-button{
+        background-color: #0d46c1;
+        color: #fff;
+        padding: 1.5rem;
+        font-size: 1.2rem;
+        border: none;
+        border-radius: 12px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .submit-button:hover {
+        background-color: #0c2783;
+      }
+
+      footer small {
+        display: block;
+        padding: 0.5rem;
+        font-size: 1rem;
+        color: #5c616d;
+        text-align: left;
       }
 
       .sr-only {
@@ -48,6 +140,9 @@
         text-decoration: none;
       }
     </style>
+
+    
+
   </head>
   <body>
 
