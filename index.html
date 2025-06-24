@@ -29,8 +29,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        
+        align-items: center;      
       }
 
       .newsletter-card {
@@ -147,8 +146,62 @@
         --------------------------------- */
 
         @media  screen and (min-width: 1350px) {
-          
 
+          .newsletter-card {
+            max-width: 600px;
+            padding: 0.98rem;
+          }
+
+          .newsletter-header p{
+            font-size: 1.1rem;
+          }
+
+          input[type="email"]  {
+            padding: 0.98rem;
+          }
+
+          input[type="email"]::placeholder{
+            font-size: 0.89rem;
+          }
+
+          .submit-button{
+            padding: 0.98rem;
+            font-size: 0.89rem;
+          }
+
+          footer small {
+            text-align: center;
+          }
+
+          
+          
+        }
+
+
+        /* -------------------------------
+          Tablet View: 1024px
+        --------------------------------- */
+
+        
+        @media screen and (max-width: 1349px) and (min-width: 1024px) {
+          .newsletter-card {
+            max-width: 600px;
+            padding: 0.98rem;
+          }
+
+          .newsletter-header h1{
+            font-size: 3rem;
+          }
+
+          .newsletter-header p{
+            font-size: 1.1rem;
+            
+          }
+
+          footer small {
+            text-align: center;
+          }
+          
         }
     </style>
 
@@ -166,7 +219,11 @@
           </div>
 
           <h1 id="newsletter-heading">Join our newsletter</h1>
-          <p>Keep up with our latest collections, exclusive deals, and special offers! </p> <p>We introduce a new collection every week, so stay tuned to snag the hottest items just for you.</p> 
+          <div>
+            <p>Keep up with our latest collections, exclusive deals, and special offers! </p> 
+            <p>We introduce a new collection every week, so stay tuned to snag the hottest items just for you.</p> 
+          </div>
+          
         </header>
 
         <section class="newsletter-input">
