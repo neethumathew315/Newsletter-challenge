@@ -6,11 +6,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://your-demo-link.vercel.app/">
+    <a href="https://newsletter-challenge-sepia.vercel.app/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/your-username/newsletter-challenge">
+    <a href="https://github.com/neethumathew315/Newsletter-challenge">
       Solution
     </a>
     <span> | </span>
